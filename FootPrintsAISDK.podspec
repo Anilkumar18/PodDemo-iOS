@@ -1,5 +1,4 @@
 Pod::Spec.new do |spec|
-
   # Metadata
   spec.name         = "FootPrintsAISDK"
   spec.version      = "0.0.1"
@@ -19,17 +18,16 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'https://github.com/Anilkumar18/PodDemo-iOS.git', :tag => '0.0.1' }
 
   # Source Files
-  spec.source_files = "FootPrintsAISDK/Classes/**/*.swift"
-
+  spec.source_files     = 'FootPrintsAISDK.xcframework/ios-arm64/FootPrintsAISDK.framework/Headers/*.{h,swift}'
+  spec.public_header_files = 'FootPrintsAISDK.xcframework/ios-arm64/FootPrintsAISDK.framework/Headers/*.h'
 
   # Exclude Files
-  spec.exclude_files = "Classes/Exclude"
+  # spec.exclude_files = 'FootPrintsAISDK/Exclude/*'
 
-  # Resources (if any)
-  # spec.resources = "Resources/*.png"
-
-  # Dependencies (if any)
+  # Dependencies
   # spec.dependency "SomeOtherPod", "~> 1.0"
-
 end
 
+
+
+ 
